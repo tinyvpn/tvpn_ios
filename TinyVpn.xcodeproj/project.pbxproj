@@ -1,0 +1,1178 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C20EED17266F8ED000AEEB4C /* AppDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED0D266F8ED000AEEB4C /* AppDataTypes.swift */; };
+		C20EED18266F8ED000AEEB4C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED0E266F8ED000AEEB4C /* Utilities.swift */; };
+		C20EED19266F8ED000AEEB4C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED0F266F8ED000AEEB4C /* BaseViewController.swift */; };
+		C20EED1A266F8ED000AEEB4C /* AppProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED10266F8ED000AEEB4C /* AppProtocols.swift */; };
+		C20EED1B266F8ED000AEEB4C /* StoreObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED11266F8ED000AEEB4C /* StoreObserver.swift */; };
+		C20EED1C266F8ED000AEEB4C /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED12266F8ED000AEEB4C /* Products.swift */; };
+		C20EED1D266F8ED000AEEB4C /* PaymentTransactionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED13266F8ED000AEEB4C /* PaymentTransactionDetails.swift */; };
+		C20EED1E266F8ED000AEEB4C /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED14266F8ED000AEEB4C /* StoreManager.swift */; };
+		C20EED1F266F8ED000AEEB4C /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED15266F8ED000AEEB4C /* AppExtensions.swift */; };
+		C20EED20266F8ED000AEEB4C /* Purchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EED16266F8ED000AEEB4C /* Purchases.swift */; };
+		C20EED22266F90DD00AEEB4C /* ProductIds.plist in Resources */ = {isa = PBXBuildFile; fileRef = C20EED21266F90DD00AEEB4C /* ProductIds.plist */; };
+		C2364AE12563EEFA00F097EC /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2364AE02563EEFA00F097EC /* PacketTunnelProvider.swift */; };
+		C2364AE72563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C2364ADE2563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C2364B1B2564CE2000F097EC /* network_service.h in Headers */ = {isa = PBXBuildFile; fileRef = C2364B192564CE2000F097EC /* network_service.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2364B242564CE5500F097EC /* network_service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2364B172564CE2000F097EC /* network_service.framework */; };
+		C2364B292564CE7E00F097EC /* http_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DF824B460E9002B6CE6 /* http_client.cpp */; };
+		C2364B2A2564CE7F00F097EC /* http_client.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DED24B460E9002B6CE6 /* http_client.h */; };
+		C2364B2B2564CE7F00F097EC /* log.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DEE24B460E9002B6CE6 /* log.h */; };
+		C2364B2C2564CE7F00F097EC /* obfuscation_utl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DEF24B460E9002B6CE6 /* obfuscation_utl.cpp */; };
+		C2364B2D2564CE7F00F097EC /* obfuscation_utl.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DF524B460E9002B6CE6 /* obfuscation_utl.h */; };
+		C2364B2E2564CE7F00F097EC /* sockhttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DEA24B460E9002B6CE6 /* sockhttp.cpp */; };
+		C2364B2F2564CE7F00F097EC /* sockhttp.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DF624B460E9002B6CE6 /* sockhttp.h */; };
+		C2364B302564CE7F00F097EC /* sockutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DF924B460E9002B6CE6 /* sockutl.cpp */; };
+		C2364B312564CE7F00F097EC /* sockutl.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DEB24B460E9002B6CE6 /* sockutl.h */; };
+		C2364B322564CE7F00F097EC /* ssl_client2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DE724B460E8002B6CE6 /* ssl_client2.cpp */; };
+		C2364B332564CE7F00F097EC /* ssl_client2.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DF224B460E9002B6CE6 /* ssl_client2.h */; };
+		C2364B342564CE7F00F097EC /* stringutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DF024B460E9002B6CE6 /* stringutl.cpp */; };
+		C2364B352564CE7F00F097EC /* stringutl.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DE824B460E8002B6CE6 /* stringutl.h */; };
+		C2364B362564CE7F00F097EC /* sysutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DF724B460E9002B6CE6 /* sysutl.cpp */; };
+		C2364B372564CE7F00F097EC /* sysutl.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DF424B460E9002B6CE6 /* sysutl.h */; };
+		C2364B382564CE7F00F097EC /* timeutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DE924B460E9002B6CE6 /* timeutl.cpp */; };
+		C2364B392564CE7F00F097EC /* timeutl.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DF124B460E9002B6CE6 /* timeutl.h */; };
+		C2364B3A2564CE7F00F097EC /* vpn_packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DFA24B460EA002B6CE6 /* vpn_packet.cpp */; };
+		C2364B3B2564CE7F00F097EC /* vpn_packet.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DFB24B460EA002B6CE6 /* vpn_packet.h */; };
+		C2364B3C2564CE7F00F097EC /* fileutl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DE524B460D3002B6CE6 /* fileutl.cpp */; };
+		C2364B3D2564CE7F00F097EC /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393DE324B45FE5002B6CE6 /* log.cpp */; };
+		C2364B402564CE7F00F097EC /* TinyVpn-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393DD824AF39F1002B6CE6 /* TinyVpn-Bridging-Header.h */; };
+		C2364B462564CE7F00F097EC /* network_objc_wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2393E1724B57386002B6CE6 /* network_objc_wrapper.mm */; };
+		C2364B472564CE7F00F097EC /* network_objc_wrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393E1924B573AD002B6CE6 /* network_objc_wrapper.h */; };
+		C2364B482564CE7F00F097EC /* network_service.h in Sources */ = {isa = PBXBuildFile; fileRef = C2393E1A24B57608002B6CE6 /* network_service.h */; };
+		C2364B492564CE7F00F097EC /* network_service.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2393E1B24B57688002B6CE6 /* network_service.cpp */; };
+		C2364B4A2564CF5700F097EC /* libmbedcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2393E0E24B571CA002B6CE6 /* libmbedcrypto.a */; };
+		C2364B4B2564CF5700F097EC /* libmbedtls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2393E0F24B571CA002B6CE6 /* libmbedtls.a */; };
+		C2364B4C2564CF5700F097EC /* libmbedx509.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2393E0D24B571C9002B6CE6 /* libmbedx509.a */; };
+		C2364B552570950B00F097EC /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AC41492538694B00C5CED0 /* NetworkExtension.framework */; };
+		C2393DA824AF399B002B6CE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2393DA724AF399B002B6CE6 /* AppDelegate.swift */; };
+		C2393DAA24AF399B002B6CE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2393DA924AF399B002B6CE6 /* SceneDelegate.swift */; };
+		C2393DAC24AF399B002B6CE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2393DAB24AF399B002B6CE6 /* ViewController.swift */; };
+		C2393DAF24AF399B002B6CE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2393DAD24AF399B002B6CE6 /* Main.storyboard */; };
+		C2393DB124AF399C002B6CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2393DB024AF399C002B6CE6 /* Assets.xcassets */; };
+		C2393DB424AF399C002B6CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2393DB224AF399C002B6CE6 /* LaunchScreen.storyboard */; };
+		C2393DBF24AF399D002B6CE6 /* TinyVpnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2393DBE24AF399D002B6CE6 /* TinyVpnTests.swift */; };
+		C2393DCA24AF399D002B6CE6 /* TinyVpnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2393DC924AF399D002B6CE6 /* TinyVpnUITests.swift */; };
+		C2393E0624B463EC002B6CE6 /* include in Resources */ = {isa = PBXBuildFile; fileRef = C2393E0524B463EB002B6CE6 /* include */; };
+		C2393E1424B57233002B6CE6 /* libmbedcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2393E0E24B571CA002B6CE6 /* libmbedcrypto.a */; };
+		C2393E1524B57233002B6CE6 /* libmbedtls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2393E0F24B571CA002B6CE6 /* libmbedtls.a */; };
+		C2393E1624B57233002B6CE6 /* libmbedx509.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2393E0D24B571C9002B6CE6 /* libmbedx509.a */; };
+		C24D28A525D3D52C006AFA66 /* network_service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2364B172564CE2000F097EC /* network_service.framework */; };
+		C24D28A625D3D52C006AFA66 /* network_service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2364B172564CE2000F097EC /* network_service.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2AC414A2538694B00C5CED0 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AC41492538694B00C5CED0 /* NetworkExtension.framework */; };
+		C2AC414C2538698300C5CED0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AC414B2538698300C5CED0 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2364AE42563EEFA00F097EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2393D9C24AF399B002B6CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2364ADD2563EEFA00F097EC;
+			remoteInfo = NEPacketTunnelVPNDemoTunnel;
+		};
+		C2364B1C2564CE2100F097EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2393D9C24AF399B002B6CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2364B162564CE2000F097EC;
+			remoteInfo = network_service;
+		};
+		C2364B262564CE5500F097EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2393D9C24AF399B002B6CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2364B162564CE2000F097EC;
+			remoteInfo = network_service;
+		};
+		C2393DBB24AF399D002B6CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2393D9C24AF399B002B6CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2393DA324AF399B002B6CE6;
+			remoteInfo = TinyVpn;
+		};
+		C2393DC624AF399D002B6CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2393D9C24AF399B002B6CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2393DA324AF399B002B6CE6;
+			remoteInfo = TinyVpn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2364AE62563EEFA00F097EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C2364AE72563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C24D28A725D3D52C006AFA66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C24D28A625D3D52C006AFA66 /* network_service.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C20EED0D266F8ED000AEEB4C /* AppDataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDataTypes.swift; sourceTree = "<group>"; };
+		C20EED0E266F8ED000AEEB4C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C20EED0F266F8ED000AEEB4C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C20EED10266F8ED000AEEB4C /* AppProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProtocols.swift; sourceTree = "<group>"; };
+		C20EED11266F8ED000AEEB4C /* StoreObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreObserver.swift; sourceTree = "<group>"; };
+		C20EED12266F8ED000AEEB4C /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		C20EED13266F8ED000AEEB4C /* PaymentTransactionDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentTransactionDetails.swift; sourceTree = "<group>"; };
+		C20EED14266F8ED000AEEB4C /* StoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		C20EED15266F8ED000AEEB4C /* AppExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		C20EED16266F8ED000AEEB4C /* Purchases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purchases.swift; sourceTree = "<group>"; };
+		C20EED21266F90DD00AEEB4C /* ProductIds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductIds.plist; sourceTree = "<group>"; };
+		C2364ADE2563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NEPacketTunnelVPNDemoTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2364AE02563EEFA00F097EC /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		C2364AE22563EEFA00F097EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2364AE32563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEPacketTunnelVPNDemoTunnel.entitlements; sourceTree = "<group>"; };
+		C2364B172564CE2000F097EC /* network_service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = network_service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2364B192564CE2000F097EC /* network_service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = network_service.h; sourceTree = "<group>"; };
+		C2364B1A2564CE2000F097EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2393DA424AF399B002B6CE6 /* TinyVpn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyVpn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2393DA724AF399B002B6CE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2393DA924AF399B002B6CE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C2393DAB24AF399B002B6CE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2393DAE24AF399B002B6CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2393DB024AF399C002B6CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2393DB324AF399C002B6CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2393DB524AF399D002B6CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2393DBA24AF399D002B6CE6 /* TinyVpnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyVpnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2393DBE24AF399D002B6CE6 /* TinyVpnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyVpnTests.swift; sourceTree = "<group>"; };
+		C2393DC024AF399D002B6CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2393DC524AF399D002B6CE6 /* TinyVpnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyVpnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2393DC924AF399D002B6CE6 /* TinyVpnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyVpnUITests.swift; sourceTree = "<group>"; };
+		C2393DCB24AF399D002B6CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2393DD824AF39F1002B6CE6 /* TinyVpn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TinyVpn-Bridging-Header.h"; sourceTree = "<group>"; };
+		C2393DD924AF39F1002B6CE6 /* CPP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CPP.cpp; sourceTree = "<group>"; };
+		C2393DDA24AF39F1002B6CE6 /* CPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CPP.hpp; sourceTree = "<group>"; };
+		C2393DDC24AF3A23002B6CE6 /* CPP-Wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "CPP-Wrapper.mm"; sourceTree = "<group>"; };
+		C2393DDE24AF3A4A002B6CE6 /* CPP-Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CPP-Wrapper.h"; sourceTree = "<group>"; };
+		C2393DDF24B02EAB002B6CE6 /* prime_feature_objc_wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = prime_feature_objc_wrapper.mm; sourceTree = "<group>"; };
+		C2393DE124B02F18002B6CE6 /* prime_feature_objc_wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prime_feature_objc_wrapper.h; sourceTree = "<group>"; };
+		C2393DE224B02F4C002B6CE6 /* prime_feature.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = prime_feature.hpp; sourceTree = "<group>"; };
+		C2393DE324B45FE5002B6CE6 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
+		C2393DE524B460D3002B6CE6 /* fileutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fileutl.cpp; sourceTree = "<group>"; };
+		C2393DE724B460E8002B6CE6 /* ssl_client2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ssl_client2.cpp; sourceTree = "<group>"; };
+		C2393DE824B460E8002B6CE6 /* stringutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringutl.h; sourceTree = "<group>"; };
+		C2393DE924B460E9002B6CE6 /* timeutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeutl.cpp; sourceTree = "<group>"; };
+		C2393DEA24B460E9002B6CE6 /* sockhttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sockhttp.cpp; sourceTree = "<group>"; };
+		C2393DEB24B460E9002B6CE6 /* sockutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sockutl.h; sourceTree = "<group>"; };
+		C2393DEC24B460E9002B6CE6 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		C2393DED24B460E9002B6CE6 /* http_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_client.h; sourceTree = "<group>"; };
+		C2393DEE24B460E9002B6CE6 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		C2393DEF24B460E9002B6CE6 /* obfuscation_utl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = obfuscation_utl.cpp; sourceTree = "<group>"; };
+		C2393DF024B460E9002B6CE6 /* stringutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stringutl.cpp; sourceTree = "<group>"; };
+		C2393DF124B460E9002B6CE6 /* timeutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeutl.h; sourceTree = "<group>"; };
+		C2393DF224B460E9002B6CE6 /* ssl_client2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl_client2.h; sourceTree = "<group>"; };
+		C2393DF324B460E9002B6CE6 /* fileutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileutl.h; sourceTree = "<group>"; };
+		C2393DF424B460E9002B6CE6 /* sysutl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysutl.h; sourceTree = "<group>"; };
+		C2393DF524B460E9002B6CE6 /* obfuscation_utl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obfuscation_utl.h; sourceTree = "<group>"; };
+		C2393DF624B460E9002B6CE6 /* sockhttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sockhttp.h; sourceTree = "<group>"; };
+		C2393DF724B460E9002B6CE6 /* sysutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sysutl.cpp; sourceTree = "<group>"; };
+		C2393DF824B460E9002B6CE6 /* http_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = http_client.cpp; sourceTree = "<group>"; };
+		C2393DF924B460E9002B6CE6 /* sockutl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sockutl.cpp; sourceTree = "<group>"; };
+		C2393DFA24B460EA002B6CE6 /* vpn_packet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vpn_packet.cpp; sourceTree = "<group>"; };
+		C2393DFB24B460EA002B6CE6 /* vpn_packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vpn_packet.h; sourceTree = "<group>"; };
+		C2393E0524B463EB002B6CE6 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		C2393E0D24B571C9002B6CE6 /* libmbedx509.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmbedx509.a; path = "../../tools/mbedtls-2.16.6/lib/libmbedx509.a"; sourceTree = "<group>"; };
+		C2393E0E24B571CA002B6CE6 /* libmbedcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmbedcrypto.a; path = "../../tools/mbedtls-2.16.6/lib/libmbedcrypto.a"; sourceTree = "<group>"; };
+		C2393E0F24B571CA002B6CE6 /* libmbedtls.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmbedtls.a; path = "../../tools/mbedtls-2.16.6/lib/libmbedtls.a"; sourceTree = "<group>"; };
+		C2393E1724B57386002B6CE6 /* network_objc_wrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = network_objc_wrapper.mm; sourceTree = "<group>"; };
+		C2393E1924B573AD002B6CE6 /* network_objc_wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = network_objc_wrapper.h; sourceTree = "<group>"; };
+		C2393E1A24B57608002B6CE6 /* network_service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = network_service.h; sourceTree = "<group>"; };
+		C2393E1B24B57688002B6CE6 /* network_service.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = network_service.cpp; sourceTree = "<group>"; };
+		C2AC41482538694B00C5CED0 /* TinyVpn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinyVpn.entitlements; sourceTree = "<group>"; };
+		C2AC41492538694B00C5CED0 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		C2AC414B2538698300C5CED0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2364ADB2563EEFA00F097EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2364B242564CE5500F097EC /* network_service.framework in Frameworks */,
+				C2364B552570950B00F097EC /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2364B142564CE2000F097EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2364B4A2564CF5700F097EC /* libmbedcrypto.a in Frameworks */,
+				C2364B4B2564CF5700F097EC /* libmbedtls.a in Frameworks */,
+				C2364B4C2564CF5700F097EC /* libmbedx509.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2393DA124AF399B002B6CE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2393E1424B57233002B6CE6 /* libmbedcrypto.a in Frameworks */,
+				C2AC414A2538694B00C5CED0 /* NetworkExtension.framework in Frameworks */,
+				C2AC414C2538698300C5CED0 /* StoreKit.framework in Frameworks */,
+				C2393E1524B57233002B6CE6 /* libmbedtls.a in Frameworks */,
+				C2393E1624B57233002B6CE6 /* libmbedx509.a in Frameworks */,
+				C24D28A525D3D52C006AFA66 /* network_service.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2393DB724AF399D002B6CE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2393DC224AF399D002B6CE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C20EED0C266F8ED000AEEB4C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C20EED0D266F8ED000AEEB4C /* AppDataTypes.swift */,
+				C20EED0E266F8ED000AEEB4C /* Utilities.swift */,
+				C20EED0F266F8ED000AEEB4C /* BaseViewController.swift */,
+				C20EED10266F8ED000AEEB4C /* AppProtocols.swift */,
+				C20EED11266F8ED000AEEB4C /* StoreObserver.swift */,
+				C20EED12266F8ED000AEEB4C /* Products.swift */,
+				C20EED13266F8ED000AEEB4C /* PaymentTransactionDetails.swift */,
+				C20EED14266F8ED000AEEB4C /* StoreManager.swift */,
+				C20EED15266F8ED000AEEB4C /* AppExtensions.swift */,
+				C20EED16266F8ED000AEEB4C /* Purchases.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C2364ADF2563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				C2364AE02563EEFA00F097EC /* PacketTunnelProvider.swift */,
+				C2364AE22563EEFA00F097EC /* Info.plist */,
+				C2364AE32563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel.entitlements */,
+			);
+			path = NEPacketTunnelVPNDemoTunnel;
+			sourceTree = "<group>";
+		};
+		C2364B182564CE2000F097EC /* network_service */ = {
+			isa = PBXGroup;
+			children = (
+				C2393DD724AF39C5002B6CE6 /* cpp */,
+				C2364B192564CE2000F097EC /* network_service.h */,
+				C2364B1A2564CE2000F097EC /* Info.plist */,
+			);
+			path = network_service;
+			sourceTree = "<group>";
+		};
+		C2393D9B24AF399B002B6CE6 = {
+			isa = PBXGroup;
+			children = (
+				C2393E0E24B571CA002B6CE6 /* libmbedcrypto.a */,
+				C2393E0F24B571CA002B6CE6 /* libmbedtls.a */,
+				C2393E0D24B571C9002B6CE6 /* libmbedx509.a */,
+				C2393DA624AF399B002B6CE6 /* TinyVpn */,
+				C2393DBD24AF399D002B6CE6 /* TinyVpnTests */,
+				C2393DC824AF399D002B6CE6 /* TinyVpnUITests */,
+				C2364ADF2563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel */,
+				C2364B182564CE2000F097EC /* network_service */,
+				C2393DA524AF399B002B6CE6 /* Products */,
+				C2393E1324B57233002B6CE6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C2393DA524AF399B002B6CE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2393DA424AF399B002B6CE6 /* TinyVpn.app */,
+				C2393DBA24AF399D002B6CE6 /* TinyVpnTests.xctest */,
+				C2393DC524AF399D002B6CE6 /* TinyVpnUITests.xctest */,
+				C2364ADE2563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel.appex */,
+				C2364B172564CE2000F097EC /* network_service.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2393DA624AF399B002B6CE6 /* TinyVpn */ = {
+			isa = PBXGroup;
+			children = (
+				C20EED0C266F8ED000AEEB4C /* Common */,
+				C2AC41482538694B00C5CED0 /* TinyVpn.entitlements */,
+				C2393DA724AF399B002B6CE6 /* AppDelegate.swift */,
+				C2393DA924AF399B002B6CE6 /* SceneDelegate.swift */,
+				C2393DAB24AF399B002B6CE6 /* ViewController.swift */,
+				C2393DAD24AF399B002B6CE6 /* Main.storyboard */,
+				C2393DB024AF399C002B6CE6 /* Assets.xcassets */,
+				C2393DB224AF399C002B6CE6 /* LaunchScreen.storyboard */,
+				C2393DB524AF399D002B6CE6 /* Info.plist */,
+				C20EED21266F90DD00AEEB4C /* ProductIds.plist */,
+			);
+			path = TinyVpn;
+			sourceTree = "<group>";
+		};
+		C2393DBD24AF399D002B6CE6 /* TinyVpnTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2393DBE24AF399D002B6CE6 /* TinyVpnTests.swift */,
+				C2393DC024AF399D002B6CE6 /* Info.plist */,
+			);
+			path = TinyVpnTests;
+			sourceTree = "<group>";
+		};
+		C2393DC824AF399D002B6CE6 /* TinyVpnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2393DC924AF399D002B6CE6 /* TinyVpnUITests.swift */,
+				C2393DCB24AF399D002B6CE6 /* Info.plist */,
+			);
+			path = TinyVpnUITests;
+			sourceTree = "<group>";
+		};
+		C2393DD724AF39C5002B6CE6 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				C2393E0524B463EB002B6CE6 /* include */,
+				C2393DEC24B460E9002B6CE6 /* base.h */,
+				C2393DF324B460E9002B6CE6 /* fileutl.h */,
+				C2393DF824B460E9002B6CE6 /* http_client.cpp */,
+				C2393DED24B460E9002B6CE6 /* http_client.h */,
+				C2393DEE24B460E9002B6CE6 /* log.h */,
+				C2393DEF24B460E9002B6CE6 /* obfuscation_utl.cpp */,
+				C2393DF524B460E9002B6CE6 /* obfuscation_utl.h */,
+				C2393DEA24B460E9002B6CE6 /* sockhttp.cpp */,
+				C2393DF624B460E9002B6CE6 /* sockhttp.h */,
+				C2393DF924B460E9002B6CE6 /* sockutl.cpp */,
+				C2393DEB24B460E9002B6CE6 /* sockutl.h */,
+				C2393DE724B460E8002B6CE6 /* ssl_client2.cpp */,
+				C2393DF224B460E9002B6CE6 /* ssl_client2.h */,
+				C2393DF024B460E9002B6CE6 /* stringutl.cpp */,
+				C2393DE824B460E8002B6CE6 /* stringutl.h */,
+				C2393DF724B460E9002B6CE6 /* sysutl.cpp */,
+				C2393DF424B460E9002B6CE6 /* sysutl.h */,
+				C2393DE924B460E9002B6CE6 /* timeutl.cpp */,
+				C2393DF124B460E9002B6CE6 /* timeutl.h */,
+				C2393DFA24B460EA002B6CE6 /* vpn_packet.cpp */,
+				C2393DFB24B460EA002B6CE6 /* vpn_packet.h */,
+				C2393DE524B460D3002B6CE6 /* fileutl.cpp */,
+				C2393DE324B45FE5002B6CE6 /* log.cpp */,
+				C2393DD924AF39F1002B6CE6 /* CPP.cpp */,
+				C2393DDA24AF39F1002B6CE6 /* CPP.hpp */,
+				C2393DD824AF39F1002B6CE6 /* TinyVpn-Bridging-Header.h */,
+				C2393DDC24AF3A23002B6CE6 /* CPP-Wrapper.mm */,
+				C2393DDE24AF3A4A002B6CE6 /* CPP-Wrapper.h */,
+				C2393DDF24B02EAB002B6CE6 /* prime_feature_objc_wrapper.mm */,
+				C2393DE124B02F18002B6CE6 /* prime_feature_objc_wrapper.h */,
+				C2393DE224B02F4C002B6CE6 /* prime_feature.hpp */,
+				C2393E1724B57386002B6CE6 /* network_objc_wrapper.mm */,
+				C2393E1924B573AD002B6CE6 /* network_objc_wrapper.h */,
+				C2393E1A24B57608002B6CE6 /* network_service.h */,
+				C2393E1B24B57688002B6CE6 /* network_service.cpp */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		C2393E1324B57233002B6CE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2AC414B2538698300C5CED0 /* StoreKit.framework */,
+				C2AC41492538694B00C5CED0 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2364B122564CE2000F097EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2364B1B2564CE2000F097EC /* network_service.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2364ADD2563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2364AE82563EEFA00F097EC /* Build configuration list for PBXNativeTarget "NEPacketTunnelVPNDemoTunnel" */;
+			buildPhases = (
+				C2364ADA2563EEFA00F097EC /* Sources */,
+				C2364ADB2563EEFA00F097EC /* Frameworks */,
+				C2364ADC2563EEFA00F097EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2364B272564CE5500F097EC /* PBXTargetDependency */,
+			);
+			name = NEPacketTunnelVPNDemoTunnel;
+			productName = NEPacketTunnelVPNDemoTunnel;
+			productReference = C2364ADE2563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C2364B162564CE2000F097EC /* network_service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2364B202564CE2100F097EC /* Build configuration list for PBXNativeTarget "network_service" */;
+			buildPhases = (
+				C2364B122564CE2000F097EC /* Headers */,
+				C2364B132564CE2000F097EC /* Sources */,
+				C2364B142564CE2000F097EC /* Frameworks */,
+				C2364B152564CE2000F097EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = network_service;
+			productName = network_service;
+			productReference = C2364B172564CE2000F097EC /* network_service.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2393DA324AF399B002B6CE6 /* TinyVpn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2393DCE24AF399D002B6CE6 /* Build configuration list for PBXNativeTarget "TinyVpn" */;
+			buildPhases = (
+				C2393DA024AF399B002B6CE6 /* Sources */,
+				C2393DA124AF399B002B6CE6 /* Frameworks */,
+				C2393DA224AF399B002B6CE6 /* Resources */,
+				C2364AE62563EEFA00F097EC /* Embed App Extensions */,
+				C24D28A725D3D52C006AFA66 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2364AE52563EEFA00F097EC /* PBXTargetDependency */,
+				C2364B1D2564CE2100F097EC /* PBXTargetDependency */,
+			);
+			name = TinyVpn;
+			productName = TinyVpn;
+			productReference = C2393DA424AF399B002B6CE6 /* TinyVpn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2393DB924AF399D002B6CE6 /* TinyVpnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2393DD124AF399D002B6CE6 /* Build configuration list for PBXNativeTarget "TinyVpnTests" */;
+			buildPhases = (
+				C2393DB624AF399D002B6CE6 /* Sources */,
+				C2393DB724AF399D002B6CE6 /* Frameworks */,
+				C2393DB824AF399D002B6CE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2393DBC24AF399D002B6CE6 /* PBXTargetDependency */,
+			);
+			name = TinyVpnTests;
+			productName = TinyVpnTests;
+			productReference = C2393DBA24AF399D002B6CE6 /* TinyVpnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2393DC424AF399D002B6CE6 /* TinyVpnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2393DD424AF399D002B6CE6 /* Build configuration list for PBXNativeTarget "TinyVpnUITests" */;
+			buildPhases = (
+				C2393DC124AF399D002B6CE6 /* Sources */,
+				C2393DC224AF399D002B6CE6 /* Frameworks */,
+				C2393DC324AF399D002B6CE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2393DC724AF399D002B6CE6 /* PBXTargetDependency */,
+			);
+			name = TinyVpnUITests;
+			productName = TinyVpnUITests;
+			productReference = C2393DC524AF399D002B6CE6 /* TinyVpnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2393D9C24AF399B002B6CE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Hench;
+				TargetAttributes = {
+					C2364ADD2563EEFA00F097EC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C2364B162564CE2000F097EC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C2393DA324AF399B002B6CE6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					C2393DB924AF399D002B6CE6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C2393DA324AF399B002B6CE6;
+					};
+					C2393DC424AF399D002B6CE6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C2393DA324AF399B002B6CE6;
+					};
+				};
+			};
+			buildConfigurationList = C2393D9F24AF399B002B6CE6 /* Build configuration list for PBXProject "TinyVpn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2393D9B24AF399B002B6CE6;
+			productRefGroup = C2393DA524AF399B002B6CE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2393DA324AF399B002B6CE6 /* TinyVpn */,
+				C2393DB924AF399D002B6CE6 /* TinyVpnTests */,
+				C2393DC424AF399D002B6CE6 /* TinyVpnUITests */,
+				C2364ADD2563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel */,
+				C2364B162564CE2000F097EC /* network_service */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2364ADC2563EEFA00F097EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2364B152564CE2000F097EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2393DA224AF399B002B6CE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2393DB424AF399C002B6CE6 /* LaunchScreen.storyboard in Resources */,
+				C2393DB124AF399C002B6CE6 /* Assets.xcassets in Resources */,
+				C2393DAF24AF399B002B6CE6 /* Main.storyboard in Resources */,
+				C20EED22266F90DD00AEEB4C /* ProductIds.plist in Resources */,
+				C2393E0624B463EC002B6CE6 /* include in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2393DB824AF399D002B6CE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2393DC324AF399D002B6CE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2364ADA2563EEFA00F097EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2364AE12563EEFA00F097EC /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2364B132564CE2000F097EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2364B292564CE7E00F097EC /* http_client.cpp in Sources */,
+				C2364B2A2564CE7F00F097EC /* http_client.h in Sources */,
+				C2364B2B2564CE7F00F097EC /* log.h in Sources */,
+				C2364B2C2564CE7F00F097EC /* obfuscation_utl.cpp in Sources */,
+				C2364B2D2564CE7F00F097EC /* obfuscation_utl.h in Sources */,
+				C2364B2E2564CE7F00F097EC /* sockhttp.cpp in Sources */,
+				C2364B2F2564CE7F00F097EC /* sockhttp.h in Sources */,
+				C2364B302564CE7F00F097EC /* sockutl.cpp in Sources */,
+				C2364B312564CE7F00F097EC /* sockutl.h in Sources */,
+				C2364B322564CE7F00F097EC /* ssl_client2.cpp in Sources */,
+				C2364B332564CE7F00F097EC /* ssl_client2.h in Sources */,
+				C2364B342564CE7F00F097EC /* stringutl.cpp in Sources */,
+				C2364B352564CE7F00F097EC /* stringutl.h in Sources */,
+				C2364B362564CE7F00F097EC /* sysutl.cpp in Sources */,
+				C2364B372564CE7F00F097EC /* sysutl.h in Sources */,
+				C2364B382564CE7F00F097EC /* timeutl.cpp in Sources */,
+				C2364B392564CE7F00F097EC /* timeutl.h in Sources */,
+				C2364B3A2564CE7F00F097EC /* vpn_packet.cpp in Sources */,
+				C2364B3B2564CE7F00F097EC /* vpn_packet.h in Sources */,
+				C2364B3C2564CE7F00F097EC /* fileutl.cpp in Sources */,
+				C2364B3D2564CE7F00F097EC /* log.cpp in Sources */,
+				C2364B402564CE7F00F097EC /* TinyVpn-Bridging-Header.h in Sources */,
+				C2364B462564CE7F00F097EC /* network_objc_wrapper.mm in Sources */,
+				C2364B472564CE7F00F097EC /* network_objc_wrapper.h in Sources */,
+				C2364B482564CE7F00F097EC /* network_service.h in Sources */,
+				C2364B492564CE7F00F097EC /* network_service.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2393DA024AF399B002B6CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20EED1C266F8ED000AEEB4C /* Products.swift in Sources */,
+				C2393DAC24AF399B002B6CE6 /* ViewController.swift in Sources */,
+				C20EED17266F8ED000AEEB4C /* AppDataTypes.swift in Sources */,
+				C20EED20266F8ED000AEEB4C /* Purchases.swift in Sources */,
+				C20EED1F266F8ED000AEEB4C /* AppExtensions.swift in Sources */,
+				C20EED1E266F8ED000AEEB4C /* StoreManager.swift in Sources */,
+				C2393DA824AF399B002B6CE6 /* AppDelegate.swift in Sources */,
+				C20EED1D266F8ED000AEEB4C /* PaymentTransactionDetails.swift in Sources */,
+				C20EED1B266F8ED000AEEB4C /* StoreObserver.swift in Sources */,
+				C20EED18266F8ED000AEEB4C /* Utilities.swift in Sources */,
+				C20EED1A266F8ED000AEEB4C /* AppProtocols.swift in Sources */,
+				C2393DAA24AF399B002B6CE6 /* SceneDelegate.swift in Sources */,
+				C20EED19266F8ED000AEEB4C /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2393DB624AF399D002B6CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2393DBF24AF399D002B6CE6 /* TinyVpnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2393DC124AF399D002B6CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2393DCA24AF399D002B6CE6 /* TinyVpnUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2364AE52563EEFA00F097EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2364ADD2563EEFA00F097EC /* NEPacketTunnelVPNDemoTunnel */;
+			targetProxy = C2364AE42563EEFA00F097EC /* PBXContainerItemProxy */;
+		};
+		C2364B1D2564CE2100F097EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2364B162564CE2000F097EC /* network_service */;
+			targetProxy = C2364B1C2564CE2100F097EC /* PBXContainerItemProxy */;
+		};
+		C2364B272564CE5500F097EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2364B162564CE2000F097EC /* network_service */;
+			targetProxy = C2364B262564CE5500F097EC /* PBXContainerItemProxy */;
+		};
+		C2393DBC24AF399D002B6CE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2393DA324AF399B002B6CE6 /* TinyVpn */;
+			targetProxy = C2393DBB24AF399D002B6CE6 /* PBXContainerItemProxy */;
+		};
+		C2393DC724AF399D002B6CE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2393DA324AF399B002B6CE6 /* TinyVpn */;
+			targetProxy = C2393DC624AF399D002B6CE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2393DAD24AF399B002B6CE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2393DAE24AF399B002B6CE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2393DB224AF399C002B6CE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2393DB324AF399C002B6CE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2364AE92563EEFA00F097EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NEPacketTunnelVPNDemoTunnel/NEPacketTunnelVPNDemoTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = NEPacketTunnelVPNDemoTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinyVpn.NEPacketTunnelVPNDemoTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "network_service/cpp/TinyVpn-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2364AEA2563EEFA00F097EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NEPacketTunnelVPNDemoTunnel/NEPacketTunnelVPNDemoTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = NEPacketTunnelVPNDemoTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinyVpn.NEPacketTunnelVPNDemoTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "network_service/cpp/TinyVpn-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2364B212564CE2100F097EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = network_service/cpp/include;
+				INFOPLIST_FILE = network_service/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TinyVpn.network-service";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2364B222564CE2100F097EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = network_service/cpp/include;
+				INFOPLIST_FILE = network_service/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TinyVpn.network-service";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C2393DCC24AF399D002B6CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: 583826913@qq.com (K8SF758N34)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/hench/IosSpace/TinyVpn/TinyVpn/cpp/include;
+				IOS_PLATFORM = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LIBRARY_SEARCH_PATHS = "/Users/hench/tools/mbedtls-2.16.6/lib";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2393DCD24AF399D002B6CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: 583826913@qq.com (K8SF758N34)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/hench/IosSpace/TinyVpn/TinyVpn/cpp/include;
+				IOS_PLATFORM = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LIBRARY_SEARCH_PATHS = "/Users/hench/tools/mbedtls-2.16.6/lib";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2393DCF24AF399D002B6CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TinyVpn/TinyVpn.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				INFOPLIST_FILE = TinyVpn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinyVpn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "network_service/cpp/TinyVpn-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C2393DD024AF399D002B6CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TinyVpn/TinyVpn.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				INFOPLIST_FILE = TinyVpn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinyVpn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "network_service/cpp/TinyVpn-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		C2393DD224AF399D002B6CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				INFOPLIST_FILE = TinyVpnTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinyVpnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinyVpn.app/TinyVpn";
+			};
+			name = Debug;
+		};
+		C2393DD324AF399D002B6CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				INFOPLIST_FILE = TinyVpnTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinyVpnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinyVpn.app/TinyVpn";
+			};
+			name = Release;
+		};
+		C2393DD524AF399D002B6CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				INFOPLIST_FILE = TinyVpnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinyVpnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TinyVpn;
+			};
+			name = Debug;
+		};
+		C2393DD624AF399D002B6CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7N27T7CWJ;
+				INFOPLIST_FILE = TinyVpnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinyVpnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TinyVpn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2364AE82563EEFA00F097EC /* Build configuration list for PBXNativeTarget "NEPacketTunnelVPNDemoTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2364AE92563EEFA00F097EC /* Debug */,
+				C2364AEA2563EEFA00F097EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2364B202564CE2100F097EC /* Build configuration list for PBXNativeTarget "network_service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2364B212564CE2100F097EC /* Debug */,
+				C2364B222564CE2100F097EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2393D9F24AF399B002B6CE6 /* Build configuration list for PBXProject "TinyVpn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2393DCC24AF399D002B6CE6 /* Debug */,
+				C2393DCD24AF399D002B6CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2393DCE24AF399D002B6CE6 /* Build configuration list for PBXNativeTarget "TinyVpn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2393DCF24AF399D002B6CE6 /* Debug */,
+				C2393DD024AF399D002B6CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2393DD124AF399D002B6CE6 /* Build configuration list for PBXNativeTarget "TinyVpnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2393DD224AF399D002B6CE6 /* Debug */,
+				C2393DD324AF399D002B6CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2393DD424AF399D002B6CE6 /* Build configuration list for PBXNativeTarget "TinyVpnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2393DD524AF399D002B6CE6 /* Debug */,
+				C2393DD624AF399D002B6CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2393D9C24AF399B002B6CE6 /* Project object */;
+}

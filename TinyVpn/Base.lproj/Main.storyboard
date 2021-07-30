@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TinyVpn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dm-Q9-nCY" userLabel="txtUserName">
+                                <rect key="frame" x="20" y="84" width="225" height="34"/>
+                                <rect key="contentStretch" x="0.10000000000000001" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="l83-3T-qVI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmI-Tb-Z5z" userLabel="txtPassword">
+                                <rect key="frame" x="20" y="138" width="225" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="74q-dh-hqx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2hN-XX-RG0">
+                                <rect key="frame" x="35" y="380" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switch_on:" destination="BYZ-38-t0r" eventType="valueChanged" id="EAT-CD-Ibf"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VPN Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLa-QT-37l">
+                                <rect key="frame" x="179" y="393" width="56" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpP-MD-G4H">
+                                <rect key="frame" x="22" y="501" width="350" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Support: tinyvpn9@protonmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnl-Dd-VB4" userLabel="support">
+                                <rect key="frame" x="20" y="824" width="243.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unregisted user." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYK-g3-6Bd">
+                                <rect key="frame" x="20" y="786" width="110.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa2-vR-MOK" userLabel="btnLogin">
+                                <rect key="frame" x="286" y="84" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9cS-yj-ldd"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hde-Ck-AwT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCG-J1-7Mr">
+                                <rect key="frame" x="18" y="437" width="354" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCN-h1-t1Q" userLabel="Premium">
+                                <rect key="frame" x="20" y="736" width="61" height="30"/>
+                                <state key="normal" title="Premium"/>
+                                <connections>
+                                    <action selector="premium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hd1-rb-BkY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="HLa-QT-37l" firstAttribute="top" secondItem="fmI-Tb-Z5z" secondAttribute="bottom" constant="221" id="7ax-JW-XPd" userLabel="Txt Switch.top = txtPassword.bottom + 250"/>
+                            <constraint firstItem="0dm-Q9-nCY" firstAttribute="top" secondItem="aa2-vR-MOK" secondAttribute="top" id="BiM-jL-U5V"/>
+                            <constraint firstItem="VCN-h1-t1Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DfS-U3-QkO" userLabel="Button.leading = Safe Area.leading + 20"/>
+                            <constraint firstItem="bpP-MD-G4H" firstAttribute="top" secondItem="SCG-J1-7Mr" secondAttribute="bottom" constant="10" id="DzL-yV-Saq" userLabel="Txt Month.top = Txt Today.bottom + 10"/>
+                            <constraint firstItem="bpP-MD-G4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="J3Z-t5-NdW" userLabel="Txt Month.leading = Safe Area.leading + 20"/>
+                            <constraint firstItem="cYK-g3-6Bd" firstAttribute="top" secondItem="VCN-h1-t1Q" secondAttribute="bottom" constant="20" id="Vg0-HN-rHh"/>
+                            <constraint firstItem="HLa-QT-37l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ahS-kP-pVO"/>
+                            <constraint firstItem="cYK-g3-6Bd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ejl-vt-bhi"/>
+                            <constraint firstItem="Gnl-Dd-VB4" firstAttribute="top" secondItem="cYK-g3-6Bd" secondAttribute="bottom" constant="20" id="fXs-3k-0Ue"/>
+                            <constraint firstItem="aa2-vR-MOK" firstAttribute="leading" secondItem="0dm-Q9-nCY" secondAttribute="trailing" constant="41" id="g0V-Dn-4Nb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gnl-Dd-VB4" secondAttribute="bottom" constant="20" id="l9V-9S-tzu"/>
+                            <constraint firstItem="0dm-Q9-nCY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="niR-aX-DQ7"/>
+                            <constraint firstItem="fmI-Tb-Z5z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pOS-IZ-eu3"/>
+                            <constraint firstItem="fmI-Tb-Z5z" firstAttribute="top" secondItem="0dm-Q9-nCY" secondAttribute="bottom" constant="20" id="rJs-Mc-SAQ"/>
+                            <constraint firstItem="Gnl-Dd-VB4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uMe-HO-Jg5"/>
+                            <constraint firstItem="SCG-J1-7Mr" firstAttribute="top" secondItem="HLa-QT-37l" secondAttribute="bottom" constant="40" id="vVY-K5-C8t" userLabel="Txt Today.top = Txt Switch.bottom"/>
+                            <constraint firstItem="aa2-vR-MOK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="vf1-vW-csE"/>
+                            <constraint firstItem="SCG-J1-7Mr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yYS-qR-xOM" userLabel="Txt Today.leading = Safe Area.leading + 20"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="aa2-vR-MOK" id="1DX-ra-R5B"/>
+                        <outlet property="swiVpn" destination="2hN-XX-RG0" id="bSt-lr-Tbo"/>
+                        <outlet property="txtMonth" destination="bpP-MD-G4H" id="Pvb-Im-fu1"/>
+                        <outlet property="txtPassword" destination="fmI-Tb-Z5z" id="I6e-zy-JfB"/>
+                        <outlet property="txtSwitch" destination="HLa-QT-37l" id="tkf-cX-CMu"/>
+                        <outlet property="txtToday" destination="SCG-J1-7Mr" id="eqL-vA-TQk"/>
+                        <outlet property="txtUserName" destination="0dm-Q9-nCY" id="Wah-uj-hoV"/>
+                        <outlet property="txtUserStatus" destination="cYK-g3-6Bd" id="cjq-Hk-Jpn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
