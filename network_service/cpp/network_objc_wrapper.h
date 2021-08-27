@@ -21,6 +21,7 @@
              withTarget: (void*) target;
 - (NSInteger) stop_vpn: (NSInteger)value;
 - (NSInteger) login: (NSString *)userName pwd: (NSString *)password device_id: (NSString *)device_id traffic_call:(void(*)(NSInteger todayTraffic, NSInteger monthTraffic, NSInteger dayLimit,NSInteger monthLimit,NSInteger ret1,NSInteger ret2,void* target)) trafficCallback withTarget: (void*) target;
+- (NSInteger) premium: (NSString *)userName traffic_call:(void(*)(NSInteger todayTraffic, NSInteger monthTraffic, NSInteger dayLimit,NSInteger monthLimit,NSInteger ret1,NSInteger ret2,void* target)) trafficCallback withTarget: (void*) target;
 - (NSInteger) send_packet: (UInt8 *)packet len:(NSInteger)len;
 - (NSInteger) set_socket_recv: (void(*)(UInt8*, NSInteger len, void* target)) socketRecvCallback withTarget: (void*) target;
 @end

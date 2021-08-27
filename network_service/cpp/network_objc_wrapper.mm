@@ -49,6 +49,10 @@
     service->login([userName UTF8String], [password UTF8String], [device_id UTF8String], trafficCallback, target);
     return 0;
 }
+- (NSInteger) premium: (NSString *)userName traffic_call:(void(*)(NSInteger todayTraffic, NSInteger monthTraffic,NSInteger dayLimit,NSInteger monthLimit,NSInteger ret1,NSInteger ret2, void* target)) trafficCallback withTarget: (void*) target {
+    service->premium([userName UTF8String], trafficCallback, target);
+    return 0;
+}
 - (NSInteger) send_packet: (UInt8 *)packet len:(NSInteger)len {
     //NSLog(@"tvpn send_packet:%i" , (int)len);
     service->send_packet(packet, len);

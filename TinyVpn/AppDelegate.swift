@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Attach an observer to the payment queue.
+        NSLog("add StoreObserver")
+        SKPaymentQueue.default().add(StoreObserver.shared)
         return true
     }
 
@@ -35,6 +39,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         return self.restrictRotation
     }
-
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Remove the observer.
+        SKPaymentQueue.default().remove(StoreObserver.shared)
+    }
 }
 

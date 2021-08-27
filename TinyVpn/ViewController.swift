@@ -204,7 +204,7 @@ class ViewController: UIViewController ,UITextFieldDelegate,NSFilePresenter    {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NSLog("start app.")
         // Do any additional setup after loading the view, typically from a nib.
         let defaults = UserDefaults.standard
         if let stringOne = defaults.string(forKey: "UserName") {
@@ -687,14 +687,50 @@ extension ViewController: StoreManagerDelegate {
 extension ViewController: StoreObserverDelegate {
     func storeObserverDidReceiveMessage(_ message: String) {
         if message != "handlePurchased" {
+            NSLog("message:\(message)")
             return
         }
         let service = NetworkService()
         let dispatchQueue = DispatchQueue(label: "QueueIdentification", qos: .background)
         let observer = UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque())
         NSLog("tvpn purchase ok.")
+        let username = self.txtUserName?.text
         dispatchQueue.async {
-            service.login(username, pwd: password, device_id: self.hardwareUUID())
+            service.premium(username,
+                traffic_call: { (todayTraffic:Int,monthTraffic:Int,dayLimit:Int,monthLimit:Int,ret1:Int,ret2:Int,observer) in
+                    let mySelf = Unmanaged<ViewController>.fromOpaque(observer!).takeUnretainedValue()
+                    DispatchQueue.main.async{
+                        if (ret1 == 0) {
+                            if (ret2 == 1) {
+                                mySelf.txtUserStatus.text = "basic user login ok."
+                            } else if (ret2==2) {
+                                mySelf.txtUserStatus.text = "premium user login ok."
+                            }
+                            mySelf.g_premium = ret2
+                            mySelf.txtUserName.isEnabled = false
+                            mySelf.txtPassword.isEnabled = false
+                            mySelf.txtUserName.alpha = 0.5
+                            mySelf.txtPassword.alpha = 0.5
+                            
+                            //mySelf.btnLogin.titleLabel?.minimumScaleFactor = 0.5
+                            //mySelf.btnLogin.titleLabel?.numberOfLines = 0
+                            //mySelf.btnLogin.titleLabel?.adjustsFontSizeToFitWidth = true
+                            mySelf.btnLogin.setTitle("Logout", for: .normal) //titleLabel?.text = "Logout"
+                            
+                            mySelf.g_day_limit = dayLimit
+                            mySelf.g_month_limit = monthLimit
+                            //btnSubLaunch.setEnabled(true)
+                        } else {
+                            mySelf.txtUserStatus.text = "login fail."
+                            mySelf.txtUserName.text = ""
+                            mySelf.txtPassword.text = ""
+                        }
+                        //print("show traffic")
+                        mySelf.show_traffic(d: todayTraffic, m: monthTraffic)
+                        let text = "login ok.\n"
+                        mySelf.g_outputStream.write(text, maxLength: text.count)
+                    }
+                }, withTarget: observer)
         }
     }
     
